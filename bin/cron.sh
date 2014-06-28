@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if Tomcat is running
-JOBID=`job tomcat-vcat`
+JOBID=`job tomcat-wikilist`
 
 if [ -z "$JOBID" ]; then
         # If job is not running, start it
