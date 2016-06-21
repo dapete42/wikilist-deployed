@@ -3,9 +3,9 @@
 #!/bin/sh
 
 if [ $(find $HOME/error.log -size +100M 2>/dev/null) ]; then
-        webservice -tomcat stop >/dev/null
+        webservice tomcat stop >/dev/null
         mv $HOME/error.log $HOME/error.log.0
-        webservice -tomcat start >/dev/null
+        webservice tomcat start >/dev/null
 fi
 
 find $HOME/public_tomcat/logs/ ! -name '.gitignore' -type f -mtime +6 -delete
