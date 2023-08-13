@@ -1,0 +1,2 @@
+#!/bin/bash
+toolforge webservice restart || ( $HOME/bin/webservice-stop ; sleep 10 ; $HOME/bin/webservice-start )

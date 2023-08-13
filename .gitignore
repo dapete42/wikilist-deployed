@@ -1,4 +1,4 @@
-.*
-*.log
-replica.my.cnf
-!.gitignore
+/.*
+/replica.my.cnf
+/service.manifest
+!/.description
